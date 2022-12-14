@@ -82,21 +82,35 @@ console.log(cadena.length);
 
 /* los objetos son estructuras de datos que pueden agrupar diferetenes tipos de datos */
 
-let MensajeObjetos = "Objetos de datos";
+let MensajeObjetos = "============Objetos de datos==============";
 console.log(MensajeObjetos);
 let diccionario = {
     nombre: "Diccionario de prueba",
     correo: "correo1@mail.com",
     numero_registro: 1,
     mision: "FrontEnd",
-    proyectos : ["comunidad","hackathon 1","hackathon 2"],
-    proPer:{
-        escolar:"Tareas",
-        profecional:"Trabajo",
-        personal:"negocio",
+    proyectos: ["comunidad", "hackathon 1", "hackathon 2"],
+    proPer: {
+        escolar: "Tareas",
+        profecional: "Trabajo",
+        personal: "negocio",
 
     },
 };
 
 console.log(diccionario)
 console.log(diccionario.proPer.escolar)
+
+/* flujo condicional */
+
+let numero1 = 1;
+let numero2 = 2;
+let textoFlujo = "==== IF ELSE====";
+console.log(textoFlujo);
+if (numero1 > numero2) {
+    console.log(true);
+} else if (numero2 > numero1) {
+    console.log(true);
+} else{
+    console.log("El numero es igual");
+}
