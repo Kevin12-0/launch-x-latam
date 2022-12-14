@@ -49,10 +49,54 @@ console.log(numero_2 === numero_3 || numero_2 < numero_3);
 /* Los areglos son vectors, estructuras de datos que permiten agrupar datos de un mismo tipo,
 un arreglo empieza su indice en 0 (primer valor del array) */
 
-let mensaje_array = "Arreglos/Arrays"
-let listOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-console.log(mensaje_array)
-console.log(listOfNumbers)
-let MensajeArreyIndex = 'Seleccion de Numero por numero de indice'
-console.log(MensajeArreyIndex)
-console.log(listOfNumbers[5])
+let mensaje_array = "Arreglos/Arrays";
+let listOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(mensaje_array);
+console.log(listOfNumbers);
+let MensajeArreyIndex = 'Seleccion de Numero por numero de indice';
+console.log(MensajeArreyIndex);
+console.log(listOfNumbers[5]);
+
+/* agregar un valor a un array */
+listOfNumbers.push(123);
+listOfNumbers.push(16);
+console.log(listOfNumbers);
+/* longitud del array */
+console.log(listOfNumbers.length);
+
+/* eliminar el ultimo valor de un array */
+listOfNumbers.pop();
+console.log(listOfNumbers);
+console.log(listOfNumbers.length);
+
+let listasDePalas = ["Hola", "Mundo", "Esto", "es", "Una", "Prueba"];
+console.log(listasDePalas);
+console.log(listasDePalas.length);
+
+/* las cadenas (strings) tambien se pueden tratar como arrays */
+
+let cadena = "Hola Mundo"
+console.log(cadena)
+console.log(cadena[0])
+console.log(cadena.length);
+
+/* los objetos son estructuras de datos que pueden agrupar diferetenes tipos de datos */
+
+let MensajeObjetos = "Objetos de datos";
+console.log(MensajeObjetos);
+let diccionario = {
+    nombre: "Diccionario de prueba",
+    correo: "correo1@mail.com",
+    numero_registro: 1,
+    mision: "FrontEnd",
+    proyectos : ["comunidad","hackathon 1","hackathon 2"],
+    proPer:{
+        escolar:"Tareas",
+        profecional:"Trabajo",
+        personal:"negocio",
+
+    },
+};
+
+console.log(diccionario)
+console.log(diccionario.proPer.escolar)
