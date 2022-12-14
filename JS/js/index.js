@@ -6,7 +6,7 @@
 console.log("\n-------Variables-----------\n");
 var numero_1 = 1;
 let numero_2 = 2;
-const numero_3 =3;
+const numero_3 = 3;
 console.log("Número 1 = " + numero_1 + ", Número 2 = " + numero_2 + ", Número 3 = " + numero_3);
 
 /* cadenas de caracteres 'Strings' pueden definirse con comillas dobles ""  o con comillas simpres ''
@@ -45,3 +45,14 @@ let message_2 = 'Operador logico OR > ||';
 console.log(message_2);
 console.log(false || false);
 console.log(numero_2 === numero_3 || numero_2 < numero_3);
+
+/* Los areglos son vectors, estructuras de datos que permiten agrupar datos de un mismo tipo,
+un arreglo empieza su indice en 0 (primer valor del array) */
+
+let mensaje_array = "Arreglos/Arrays"
+let listOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(mensaje_array)
+console.log(listOfNumbers)
+let MensajeArreyIndex = 'Seleccion de Numero por numero de indice'
+console.log(MensajeArreyIndex)
+console.log(listOfNumbers[5])
