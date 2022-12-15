@@ -111,6 +111,57 @@ if (numero1 > numero2) {
     console.log(true);
 } else if (numero2 > numero1) {
     console.log(true);
-} else{
+} else {
     console.log("El numero es igual");
 }
+
+/* ciclo while */
+
+let mensajeWhile = "====Ciclo While====";
+console.log(mensajeWhile);
+let contador = 0;
+while (contador <= 12) {
+    console.log(contador);
+    contador = contador + 1;
+}
+console.log("Final del ciclo while =" + contador);
+
+/* ciclo do while este ciclo nececita al menos una iteración */
+let mensajeDoWhile = "=== ciclo do while ===";
+console.log(mensajeDoWhile);
+let numeroDoWhile = 14;
+do {
+    numeroDoWhile = numeroDoWhile + 2;
+    console.log(numeroDoWhile);
+} while (numeroDoWhile < 22);
+console.log("Fuera del rango = " + numeroDoWhile);
+
+/* ciclo for este ciclo tiene un numero de iteraciones controladas */
+
+let mensajeFor = "==== Cciclo For ====="
+console.log(mensajeFor);
+let numeroFor = 1;
+for (numeroFor; numeroFor < 5; numeroFor = numeroFor + 1) {
+    console.log(numeroFor);
+}
+console.log("Fuera de Rango = " + numeroFor)
+
+/* sentecias switch sirve para no estar anidando casos o usos */
+
+let mensajeSwitch = "==== Switch ====";
+console.log(mensajeSwitch);
+switch (prompt("¿Como esta el clima?")) {
+    case "lluvioso":
+        console.log("llevate sombrilla");
+        break;
+    case "soleado":
+        console.log("ponte bloqueador solar");
+        break;
+    case "frio":
+        console.log("llevate una chamarra");
+        break;
+    default:
+        console.log("Ten un lindo dia");
+        break;
+}
+console.log("switch finalizado")
