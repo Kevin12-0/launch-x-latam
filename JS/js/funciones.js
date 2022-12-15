@@ -45,12 +45,12 @@ exepciones */
 function preguntarDireccion(pregunta) {
     let result = prompt(pregunta);
     if (result.toLocaleLowerCase() == "Izquierda" || result.toLocaleLowerCase() == 'izquierda') return "I";
-    if (result.toLocaleLowerCase() == "Derecha" || result.toLocaleLowerCase() == "Derecha") return "D";
+    if (result.toLocaleLowerCase() == "Derecha" || result.toLocaleLowerCase() == "derecha") return "D";
     throw new Error("Dirección invalida: " + result);
 }
 
 function mirar() {
-    if (preguntaDirección("A que lado?") == "I" || preguntaDirección("A que lado?") == "i") {
+    if (preguntarDireccion("A que lado?") == "I" || preguntarDireccion("A que lado?") == "i") {
         return "Una casa";
     } else {
         return "2 perros rabiosos";
@@ -61,4 +61,3 @@ try {
 } catch (e) {
     console.log("Error: " + e);
 }
-
