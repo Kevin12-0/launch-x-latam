@@ -74,5 +74,9 @@ const promesa = () =>
         setTimeout(() => (resolve(console.log("Todo cool")), reject(new Error("Opps"))), 2000));
 
 async function main() {
-
+    await promesa();
+    console.log("Aqui termina la primera promesa");
+    await promesa();
+    console.log("Aqui termina la segunda promesa");
 }
+main();
