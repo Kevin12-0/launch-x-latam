@@ -61,3 +61,18 @@ try {
 } catch (e) {
     console.log("Error: " + e);
 }
+
+/* funciones aincronas */
+
+setTimeout(() => console.log("Tick"), 500);
+
+let fifteen = Promise.resolve(15);
+fifteen.then((value) => console.log(`Got ${value}`));
+
+const promesa = () =>
+    new Promise((resolve, reject) =>
+        setTimeout(() => (resolve(console.log("Todo cool")), reject(new Error("Opps"))), 2000));
+
+async function main() {
+
+}
