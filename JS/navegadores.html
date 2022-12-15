@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consumir API</title>
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./jss/navegadores.js"></script>
 </head>
+
 <body>
     <h1 class="titulo-h1" id="titulo1">Titulo de prueba</h1>
-    <p>Este es un parrado</p>
-    <div class="div"></div>
+    <p>Este es un parrafo</p>
+    <a href="#" class="links" id="link">Link de prueba</a>
+    <p id="demo"></p>
+    <div class="div">
+        <h2 id="titulo2" onclick="cambiartexto(this)">Titulo 2</h2>
+        <br>
+        <p onmouseover="nOver(this)" onmouseout="nOut(this)">Mause sobre el texto</p>
+    </div>
     <br>
     <div class="div"></div>
 
+    <button id="boton1">Prueba</button>
 </body>
+<footer>
+    <script src="./js/navegadores.js"></script>
+</footer>
+
 </html>
