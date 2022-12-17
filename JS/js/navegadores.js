@@ -17,3 +17,10 @@ function cambiartexto(obj){
     obj.innerHTML ="Texto clickeado"
 }
 
+function nOver(obj){
+    obj.innerHTML ="Mouse over now"
+}
+
+function nOut(obj){
+    obj.innerHTML ="Mouse out"
+}
