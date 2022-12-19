@@ -24,3 +24,19 @@ function nOver(obj){
 function nOut(obj){
     obj.innerHTML ="Mouse out"
 }
+
+function mDown(obj){
+    obj.style.backgroundColor = rgb(255,255,34);
+    obj.innerHTML = "Sueltame";
+}
+
+function mUp(obj){
+    obj.style.backgroundColor = rgb(1,1,113);
+    obj.innerHTML = "Gracias";
+}
+
+const boton = document.getElementById("boton1");
+boton.addEventListener("click",alerta);
+function alerta(){
+    alert("Esto es una Alerta de JS");
+}
